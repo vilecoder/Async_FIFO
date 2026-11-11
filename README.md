@@ -4,7 +4,9 @@ A parameterized asynchronous FIFO that safely moves data between two unrelated c
 
 ## Architecture
 
-![Asynchronous FIFO block diagram](docs/Async_FIFO_architecture.jpg)
+![Asynchronous FIFO block diagram]
+<img width="400" height="232" alt="image" src="https://github.com/user-attachments/assets/a6e3afba-2edc-44a9-ac30-5cd3e9e1e3b8" />
+
 
 Data is stored in a dual-port memory. Each side keeps its own pointer, and the two pointers are exchanged through double-flop synchronizers to produce the FULL and EMPTY flags.
 
